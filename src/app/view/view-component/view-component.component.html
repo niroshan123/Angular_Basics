@@ -1,0 +1,11 @@
+User name: <input type="text" [(ngModel)]="userName" >
+<!-- in order to bind that the user makes to amember variable of the component 1 -->
+<!-- and need to bind the search click to a fuction a method of the component 1.1 -->
+<button (click)="gitHub()">Search</button>
+
+<div *ngIf="Response">
+<p>Login Name:{{Response.login}}</p>
+<p>Number of Repos{{Response.public_repos}}</p>
+<p>Number of gists{{Response.public_gists}}</p>
+<p>Number of followers{{Response.followers}}</p>
+</div>
