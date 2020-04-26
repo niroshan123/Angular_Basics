@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient,HttpErrorResponse } from '@angular/common/http';
 //import { Observable } from 'rxjs';
-import { IEmployee } from './employee';
+import { IEmployee } from '../models/employee';
 import { throwError, Observable } from 'rxjs'
 import { catchError } from 'rxjs/operators'
 
@@ -12,7 +12,7 @@ import { catchError } from 'rxjs/operators'
 })
 export class EmployeeService {
 
-  private _url:string="/assets/data/employee.json";
+  private _url:string="./assets/data/employee.json";
 
   constructor(private http:HttpClient) { }
 
