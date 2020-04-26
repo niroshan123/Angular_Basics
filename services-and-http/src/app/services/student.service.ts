@@ -3,7 +3,7 @@ import { HttpClientModule, HttpClient, HttpErrorResponse } from '@angular/common
 import { IStudent } from '../models/student';
 import { throwError,Observable } from 'rxjs';
 import { catchError } from 'rxjs/operators';
-
+//another way of using service 
 @Injectable({
   providedIn: 'root'
 })
