@@ -4,7 +4,7 @@ import { IStudent } from '../models/student';
 import { throwError,Observable } from 'rxjs';
 import { catchError } from 'rxjs/operators';
 //another way of using service 
-@Injectable({
+@Injectable({//injectable means using a service of service
   providedIn: 'root'
 })
 export class StudentService {
