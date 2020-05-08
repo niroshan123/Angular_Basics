@@ -10,8 +10,6 @@ export class SettingsComponent implements OnInit {
   routes=[
     {linkName:'Contact',url: 'contact'},
     {linkName:'Profile',url: 'profile'},
-   
-    
       ];
 
   constructor() { }

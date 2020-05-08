@@ -9,10 +9,10 @@ import { HttpClient } from '@angular/common/http';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  
+
   routes=[
-{linkName:'Home',url: 'home'},
-{linkName:'Settings',url: 'settings'},
+{linkName: 'Home', url: 'home'},
+{linkName: 'Settings', url: 'settings'},
 {linkName:'Address-card',url: 'address-card'},
 {linkName:'Date',url:'date'}
 
