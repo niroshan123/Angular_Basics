@@ -1,0 +1,16 @@
+<h2>Hello Form deirectives</h2>
+<p *ngIf="directiveStatus; else noServer"  >
+  directives created!
+</p>
+<ng-template #noServer>
+  directives not created!
+</ng-template>
+<button (click)="directive()" >Click Here</button>
+<hr>
+<p [ngStyle]="{backgroundColor : getColor()}">
+  This user is {{getUserStatus()}}
+</p>
+
+<p *ngFor="let servers of servers">
+  {{servers}} and is {{getUserStatus()}}
+</p>

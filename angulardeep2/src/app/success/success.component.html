@@ -1,3 +1,10 @@
 <p>
   This is a Success Message
 </p>
+<button class="btn btn-primary" [disabled]="!allowServer" (click)="showServer()">Setting time out</button>
+<h2>{{server}}</h2>
+<input type="text" class="form-control" (input)="onUpdateServerName($event)">
+{{serverName}}
+
+<input type="text" class="form-control" [(ngModel)]="serverName2">
+{{serverName2}}

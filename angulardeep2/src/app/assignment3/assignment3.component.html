@@ -1,0 +1,9 @@
+
+<button (click)="buttonToggle()">Display Details</button>
+
+<p *ngIf ="buttonStatus1">
+  For deploying Angular
+</p>
+<div *ngFor="let log of logs; let i = index"
+     [ngStyle]="{backgroundColor:i>=5 ? 'blue' : 'transparent'}">{{log}}
+</div>

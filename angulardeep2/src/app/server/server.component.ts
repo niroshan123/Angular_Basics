@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {AppComponent} from '../app.component';
 
 @Component({
   selector: 'app-server',
@@ -6,10 +7,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./server.component.css']
 })
 export class ServerComponent implements OnInit {
-
-  constructor() { }
+  serverName = '';
+  serverCreation = 'server is down';
+  constructor(private appComponent: AppComponent) { }
 
   ngOnInit() {
+  }
+  myFunction() {
+     this.serverCreation = 'Server is up' + this.serverName;
   }
 
 }
